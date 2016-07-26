@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Sgt-bH-Czp" customClass="YJYYShakeAnimation">
+            <rect key="frame" x="0.0" y="0.0" width="296" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="用户名" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p9R-4M-1in">
+                    <rect key="frame" x="20" y="20" width="256" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="密码" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3K-Eh-Ysv">
+                    <rect key="frame" x="20" y="70" width="256" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="COH-Qu-Zra">
+                    <rect key="frame" x="20" y="120" width="256" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="登录"/>
+                    <connections>
+                        <action selector="login:" destination="Sgt-bH-Czp" eventType="touchUpInside" id="0dM-Pi-h5e"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="R3K-Eh-Ysv" firstAttribute="top" secondItem="p9R-4M-1in" secondAttribute="bottom" constant="20" id="17l-Pu-UUc"/>
+                <constraint firstItem="COH-Qu-Zra" firstAttribute="top" secondItem="R3K-Eh-Ysv" secondAttribute="bottom" constant="20" id="6Cf-iB-Rwh"/>
+                <constraint firstAttribute="trailing" secondItem="COH-Qu-Zra" secondAttribute="trailing" constant="20" id="APa-t0-ell"/>
+                <constraint firstAttribute="trailing" secondItem="p9R-4M-1in" secondAttribute="trailing" constant="20" id="J3R-ay-Cff"/>
+                <constraint firstItem="p9R-4M-1in" firstAttribute="leading" secondItem="Sgt-bH-Czp" secondAttribute="leading" constant="20" id="OA4-7U-lTf"/>
+                <constraint firstItem="COH-Qu-Zra" firstAttribute="leading" secondItem="Sgt-bH-Czp" secondAttribute="leading" constant="20" id="bWu-cq-Bzq"/>
+                <constraint firstAttribute="trailing" secondItem="R3K-Eh-Ysv" secondAttribute="trailing" constant="20" id="eLZ-TI-6q1"/>
+                <constraint firstItem="R3K-Eh-Ysv" firstAttribute="leading" secondItem="Sgt-bH-Czp" secondAttribute="leading" constant="20" id="lmg-NK-jic"/>
+                <constraint firstItem="p9R-4M-1in" firstAttribute="top" secondItem="Sgt-bH-Czp" secondAttribute="top" constant="20" id="vax-II-Dn4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="passwordT" destination="R3K-Eh-Ysv" id="hCe-fe-Gst"/>
+                <outlet property="userNameT" destination="p9R-4M-1in" id="B8r-JF-N5y"/>
+            </connections>
+            <point key="canvasLocation" x="369" y="208.5"/>
+        </view>
+    </objects>
+</document>
